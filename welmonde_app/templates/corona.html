@@ -1,0 +1,433 @@
+{% extends "header.html" %}
+{% load static %}
+{% block content %}
+
+<section id="hero" class="d-flex align-items-center">
+
+  <div class="container-fluid aos-init aos-animate" data-aos="zoom-out" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <div class="row">
+              <div class="col-xl-5">
+                <img src="{% static 'img/Welmonde-logo-white.png' %}" class="" alt="">
+                <h1 style="font-size: 40px; color:#ffffff;">GET TESTED FOR COVID19</h1>
+                <h2 style="font-size: 20px;font-weight: 100;color:#ffffff;">Testing will be done only against a valid physical prescription by certified physician</h2>
+                <span style="font-size: 20px;color:#ffffff;">BENGALURU</span>
+                <span style="font-size: 20px;color:#ffffff;">|</span>
+                <span style="font-size: 20px;color:#ffffff;">KERALA</span>
+                <br>
+                <a href="#about" class="btn-get-started scrollto">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section><!-- End Hero -->
+<section id="services" class="services" style="background: #069D88;padding-bottom: 0px; padding-top: 30px;">
+<div class="container">
+<div class="section-title" style="text-align: left !important;">
+  <h2 style="font-size: 24px;color:#ffffff;margin-left: 5% !important;"><b>Book from our wide range of tests</b></h2>
+  <p style="font-size: 18px;color:#ffffff;margin-left: 5% !important;font-weight: 100;
+">Home and lab services available for all tests</p>
+  <div class="form-row" style="margin-left: 5% !important;">
+  <div class="form-group col-3" style="background-color: #ffffff;margin-right:3% !important;">
+    <label for="sel1">Select State</label>
+    <select class="form-control" id="sel1" style="border:0px !important;">
+      <option>Karnataka</option>
+      <option>Kerala</option>
+    </select>
+  </div>
+  <div class="form-group col-3" style="background-color: #ffffff;margin-right:3% !important;margin-leftt:3% !important;">
+    <label for="sel2">Select City</label>
+    <select class="form-control" id="sel2" style="border:0px !important;">
+      <option>Bengaluru</option>
+      <option>Kerala</option>
+    </select>
+  </div>
+  <div class="form-group col-3" style="background-color: #ffffff;margin-right:3% !important;margin-leftt:3% !important;">
+    <label for="sel3">Select Lab</label>
+    <select class="form-control" id="sel3" style="border:0px !important;">
+      <option>Apollo Lab1</option>
+      <option>Apollo Lab2</option>
+      <option>Apollo Lab3</option>
+      <option>Apollo Lab4</option>
+    </select>
+  </div>
+</div>
+ </div>
+
+</div>
+</section><!-- End Hero -->
+
+<section id="services" class="service">
+  <div class="container">
+    <div class="border" id="cartadd" style="padding: 1%;display:none">
+      <div class="container">
+        <div class="d-flex justify-content-between w-100">
+          <div class="" style="width:30%">
+              <i class="fa fa-check" aria-hidden="true" style="color: #39BB37;"></i>
+              <span style="color: #39BB37;">Added to cart</span>
+              <b style="padding-left: 10%;">Your Cart</b>
+              <span class="dynamicval2"></span>
+          </div>
+          <div class>
+            <span class="dynamicval"></span>
+            <a href="#about" class="btn-get-started scrollto" style="font-size: 18px;
+        padding: 4px 10px;border-radius: 3px;color: #fff;background: #39BB37;">Proceed to Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+
+       <div class="card-deck" style="padding-top: 3%;">
+         <div class="card">
+           <img class="card-img-top" src="{% static 'img/Rectangle_1.png' %}" alt="Card image cap" style="position:absolute;">
+           <p class="carousel-caption" style="bottom: auto; right: auto;text-align: inherit;line-height: normal;
+           padding-top: 5%;padding-bottom: 0px !important;">RT- PCR</p>
+           <div class="container"  style="color: white; padding-top: 20%; padding-left: 15%;">
+         <div class="row">
+         <div class="col-lg-12">
+           <div class="star-rating-1">
+             <span class="fa fa-star" data-rating="1"></span>
+             <span class="fa fa-star-o" data-rating="2"></span>
+             <span class="fa fa-star-o" data-rating="3"></span>
+             <span class="fa fa-star-o" data-rating="4"></span>
+             <span class="fa fa-star-o" data-rating="5"></span>
+             <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+           </div>
+         </div>
+         </div>
+         </div>
+
+           <div class="card-body">
+             <h3 class="card-title" style="font-family: Open Sans;">₹ 4000/-</h3>
+             <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+             <p class="card-text" style="color: #003966;font-weight:600;">View how test is done ></p>
+             <div class="container" style="padding:0px;">
+             <div class="d-flex justify-content-between w-100 testdiv">
+               <div id="adddiv1">
+                 <a href="#about" class="btn-get-started scrollto" id="add1" style="font-size: 18px;
+             padding: 8px 28px;border-radius: 3px;color: #fff;background: #069D88;">ADD</a></div>
+           <div class="input-group overall1" style="display:none;">
+  <input type="button" value="-" class="button-minus" data-field="quantity">
+  <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field" id="quantity1">
+  <input type="button" value="+" class="button-plus" data-field="quantity">
+</div>
+         <div style="width:30%;font-size: 140%;"><i class="fa fa-share-alt" aria-hidden="true" style="margin-right:20%;    color: rgba(0, 0, 0, 0.75);"></i><i  class="fa fa-bookmark-o bookmark-toggle" aria-hidden="true" style="    color: rgba(0, 0, 0, 0.75);"></i></div>
+           </div>
+           </div>
+           </div>
+         </div>
+  <div class="card">
+    <img class="card-img-top" src="{% static 'img/Rectangle_2.png' %}" alt="Card image cap" style="position:absolute;">
+    <p class="carousel-caption" style="bottom: auto; right: auto;text-align: inherit;line-height: normal;
+        padding-top: 5%;padding-bottom: 0px !important;">COVID Antigen test Rapid</p>
+    <div class="container"  style="color: white; padding-top: 20%; padding-left: 15%;">
+<div class="row">
+  <div class="col-lg-12">
+    <div class="star-rating-2">
+      <span class="fa fa-star-o" data-rating="1" style="font-family:normal normal normal 14px/1 FontAwesome !important"></span>
+      <span class="fa fa-star-o" data-rating="2"></span>
+      <span class="fa fa-star-o" data-rating="3"></span>
+      <span class="fa fa-star-o" data-rating="4"></span>
+      <span class="fa fa-star-o" data-rating="5"></span>
+      <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+    </div>
+  </div>
+</div>
+</div>
+    <div class="card-body">
+      <h3 class="card-title" style="font-family: Open Sans;">₹ 950/-</h3>
+      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+      <p class="card-text" style="color: #003966;font-weight:600;">View how test is done ></p>
+      <div class="container" style="padding:0px;">
+      <div class="d-flex justify-content-between w-100 testdiv">
+        <div id="adddiv2">
+        <a href="#about" class="btn-get-started scrollto" id="add2" style="font-size: 18px;
+    padding: 8px 28px;border-radius: 3px;color: #fff;background: #069D88;">ADD</a></div>
+    <div class="input-group overall2" style="display:none;">
+<input type="button" value="-" class="button-minus" data-field="quantity">
+<input type="number" step="1" max="" value="1" name="quantity" class="quantity-field" id="quantity2">
+<input type="button" value="+" class="button-plus" data-field="quantity">
+</div>
+  <div style="width:30%;font-size: 140%;"><i class="fa fa-share-alt" aria-hidden="true" style="margin-right:20%;    color: rgba(0, 0, 0, 0.75);"></i><i  class="fa fa-bookmark-o bookmark-toggle" aria-hidden="true" style="    color: rgba(0, 0, 0, 0.75);"></i></div>
+    </div>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{% static 'img/Rectangle_3.png' %}" alt="Card image cap" style="position:absolute;">
+    <p class="carousel-caption" style="bottom: auto; right: auto;text-align: inherit;line-height: normal;
+    padding-top: 5%;padding-bottom: 0px !important;">COVID Antibody IgG CLIA method</p>
+    <div class="container"  style="color: white; padding-top: 20%; padding-left: 15%;">
+<div class="row">
+  <div class="col-lg-12">
+    <div class="star-rating-3">
+      <span class="fa fa-star-o" data-rating="1" style="font-family:normal normal normal 14px/1 FontAwesome !important"></span>
+      <span class="fa fa-star-o" data-rating="2"></span>
+      <span class="fa fa-star-o" data-rating="3"></span>
+      <span class="fa fa-star-o" data-rating="4"></span>
+      <span class="fa fa-star-o" data-rating="5"></span>
+      <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+    </div>
+  </div>
+</div>
+</div>
+
+    <div class="card-body">
+      <h3 class="card-title" style="font-family: Open Sans;">₹ 1600/-</h3>
+      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+      <p class="card-text" style="color: #003966;font-weight:600;">View how test is done ></p>
+      <div class="container" style="padding:0px;">
+      <div class="d-flex justify-content-between w-100 testdiv">
+        <div id="adddiv3">
+        <a href="#about" class="btn-get-started scrollto" id="add3" style="font-size: 18px;
+    padding: 8px 28px;border-radius: 3px;color: #fff;background: #069D88;">ADD</a></div>
+    <div class="input-group overall3" style="display:none;">
+<input type="button" value="-" class="button-minus" data-field="quantity">
+<input type="number" step="1" max="" value="1" name="quantity" class="quantity-field" id="quantity3">
+<input type="button" value="+" class="button-plus" data-field="quantity">
+</div>
+  <div style="width:30%;font-size: 140%;"><i class="fa fa-share-alt" aria-hidden="true" style="margin-right:20%;    color: rgba(0, 0, 0, 0.75);"></i><i  class="fa fa-bookmark-o bookmark-toggle" aria-hidden="true" style="    color: rgba(0, 0, 0, 0.75);"></i></div>
+    </div>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{% static 'img/Rectangle_4.png' %}" alt="Card image cap" style="position:absolute;">
+    <p class="carousel-caption" style="bottom: auto; right: auto;text-align: inherit;line-height: normal;
+    padding-top: 5%;padding-bottom: 0px !important;">COVID Antibody IgM IgG Rapid test</p>
+    <div class="container" style="color: white; padding-top: 20%; padding-left: 15%;">
+<div class="row">
+  <div class="col-lg-12">
+    <div class="star-rating-4">
+      <span class="fa fa-star-o" data-rating="1" style="font-family:normal normal normal 14px/1 FontAwesome !important"></span>
+      <span class="fa fa-star-o" data-rating="2"></span>
+      <span class="fa fa-star-o" data-rating="3"></span>
+      <span class="fa fa-star-o" data-rating="4"></span>
+      <span class="fa fa-star-o" data-rating="5"></span>
+      <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+    </div>
+  </div>
+</div>
+</div>
+
+    <div class="card-body">
+      <h3 class="card-title" style="font-family: Open Sans;">₹ 1600/-</h3>
+      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+      <p class="card-text" style="color: #003966;font-weight:600;">View how test is done ></p>
+      <div class="container" style="padding:0px;">
+      <div class="d-flex justify-content-between w-100 testdiv">
+        <div id="adddiv4">
+        <a href="#about" class="btn-get-started scrollto" id="add4" style="font-size: 18px;
+    padding: 8px 28px;border-radius: 3px;color: #fff;background: #069D88;">ADD</a></div>
+    <div class="input-group overall4" style="display:none;">
+<input type="button" value="-" class="button-minus" data-field="quantity">
+<input type="number" step="1" max="" value="1" name="quantity" class="quantity-field" id="quantity4">
+<input type="button" value="+" class="button-plus" data-field="quantity">
+</div>
+  <div style="width:30%;font-size: 140%;"><i class="fa fa-share-alt" aria-hidden="true" style="margin-right:20%;    color: rgba(0, 0, 0, 0.75);"></i><i  class="fa fa-bookmark-o bookmark-toggle" aria-hidden="true" style="    color: rgba(0, 0, 0, 0.75);"></i></div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+ </div>
+
+</div>
+</section>
+
+<section id="services" class="service">
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-up">
+      <p style="font-size: 24px;">All the tests are conducted with utmost safety precautions</p>
+    </div>
+    <div>
+
+       <div class="card-deck">
+         <div class="card"  style="background: #f8f8f8;border: 0px;">
+           <div class="card-body">
+           <div class="info">
+             <div class="column" style="text-align:center;">
+             <img src="{% static 'Icons/govt approved.svg' %}" alt="Kiwi standing on oval"><br>
+             <b>Government Approved Lab</b>
+             <p style="padding: 0px;">Your samples will be processed at our Labs. All our Labs has been approved by government for COVID-19 testing.</p>
+             </div>
+           </div>
+           </div>
+         </div>
+
+         <div class="card"  style="background: #f8f8f8;border: 0px;">
+           <div class="card-body">
+           <div class="info">
+             <div class="column" style="text-align:center;">
+             <img src="{% static 'Icons/sample collection icon.svg' %}" alt="Kiwi standing on oval"><br>
+             <b>Safe sample collection</b>
+             <p style="padding: 0px;">Our team is following the guidelines issued by the Indian Council of Medical Research to ensure your safety.</p>
+             </div>
+           </div>
+           </div>
+         </div>
+
+         <div class="card"  style="background: #f8f8f8;border: 0px;">
+           <div class="card-body">
+           <div class="info">
+             <div class="column" style="text-align:center;">
+             <img src="{% static 'Icons/PPE icon.svg' %}" alt="Kiwi standing on oval"><br>
+             <b>Personal Protective Equipment</b>
+             <p style="padding: 0px;">Our technicians are fully equipped with Personal Protective Equipment to ensure your safety and theirs.</p>
+             </div>
+           </div>
+           </div>
+         </div>
+
+      </div>
+    </div>
+</section>
+
+
+<section id="contact" class="contact" style="padding: 0px;">
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-up" style="padding: 0px;">
+      <p style="font-size: 34px;">What is Corona?</p>
+    </div>
+
+    <div class="column" style="text-align:center;">
+    <p style="padding: 0 15%;font-size: 18px;">Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment. Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.</p>
+    </div>
+  </div>
+</section><!-- End Contact Us Section -->
+
+<section id="services" class="service">
+  <div class="container">
+    <div>
+
+       <div class="card-deck">
+         <div class="card"  style="background: #069D88;margin-left:10%;margin-right:0px;">
+           <div class="card-body">
+           <div class="info">
+             <div class="column">
+             <b style="color:#FFFFFF; font-size:34px;">Symptoms</b><br>
+             <p style="padding: 0px;color:#FFFFFF;">The COVID-19 virus affects different people in different ways. COVID-19 is a respiratory disease and most infected people will develop mild to moderate symptoms and recover without requiring special treatment. People who have underlying medical conditions and those over 60 years old have a higher risk.</p>
+             </div>
+           </div>
+           </div>
+         </div>
+
+         <div class="card"  style="background: #003966;margin-right:10%;margin-left:0px;">
+           <div class="card-body">
+           <div class="info">
+             <div class="row">
+             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+               <div class="column" style="text-align:center;">
+             <img src="{% static 'Icons/fever.svg' %}" alt="Kiwi standing on oval" style="padding-bottom: 10%;">
+             <p style="padding:0px; color:#FFFFFF;">Fever</p>
+               </div>
+             </div>
+             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+               <div class="column" style="text-align:center;">
+             <img src="{% static 'Icons/tiredness.svg' %}" alt="Kiwi standing on oval" style="padding-bottom: 10%;">
+             <p style="padding:0px; color:#FFFFFF;">Tiredness</p>
+             </div>
+           </div>
+
+             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+               <div class="column" style="text-align:center;">
+             <img src="{% static 'Icons/dry cough.svg' %}" alt="Kiwi standing on oval" style="padding-bottom: 10%;">
+             <p style="padding:0px; color:#FFFFFF;">Dry Cough </p>
+           </div>
+             </div>
+             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+               <div class="column" style="text-align:center;">
+             <img src="{% static 'Icons/sore throat.svg' %}" alt="Kiwi standing on oval" style="padding-bottom: 10%;">
+             <p style="padding:0px; color:#FFFFFF;">Sore throat </p>
+             </div>
+             </div>
+             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+               <div class="column" style="text-align:center;">
+             <img src="{% static 'Icons/shortness of breath.svg' %}" alt="Kiwi standing on oval" style="padding-bottom: 10%;">
+             <p style="padding:0px; color:#FFFFFF;">Shortness of breath</p>
+             </div>
+             </div>
+             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+               <div class="column" style="text-align:center;">
+             <img src="{% static 'Icons/Diarroeha nausea running nose.svg' %}" alt="Kiwi standing on oval" style="padding-bottom: 10%;">
+             <p style="padding:0px; color:#FFFFFF;">Diarrhoea, nausea, running nose </p>
+             </div>
+             </div>
+             </div>
+
+           </div>
+           </div>
+         </div>
+
+      </div>
+    </div>
+</section>
+
+<section id="contact" class="contact" style="padding: 0px;">
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-up" style="padding: 0px;">
+      <p style="font-size: 34px;">How it Spreads?</p>
+    </div>
+
+    <div class="column" style="text-align:center;">
+    <p style="padding: 0 15%;font-size: 18px;">The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes. Currently COVID-19 is spreading from person to person (Personal Contact like Shake hand, Hugging, Social gatherings), Touching contaminated objects and Mass gathering</p>
+    </div>
+  </div>
+</section><!-- End Contact Us Section -->
+
+<section id="contact" class="contact">
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-up">
+      <p style="font-size: 24px;">Preventive measures to be taken</p>
+    </div>
+
+    <div class="row">
+    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+      <div class="column" style="text-align:center;">
+    <img src="{% static 'Icons/hand hygeine.svg' %}" alt="Kiwi standing on oval" class="dot">
+    <p style="padding:0px;">Maintain hand hygeine </p>
+    </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+      <div class="column" style="text-align:center;">
+    <img src="{% static 'Icons/mask.svg' %}" alt="Kiwi standing on oval" class="dot">
+    <p style="padding:0px;">Wear a face mask if required</p>
+    </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+      <div class="column" style="text-align:center;">
+    <img src="{% static 'Icons/maintain distance.svg' %}" alt="Kiwi standing on oval" class="dot">
+    <p style="padding:0px;">Practice physical distancing </p>
+    </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+      <div class="column" style="text-align:center;">
+    <img src="{% static 'Icons/quarantine.svg' %}" alt="Kiwi standing on oval" class="dot">
+    <p style="padding:0px;">Self Quarantine if you feel unwell</p>
+    </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+      <div class="column" style="text-align:center;">
+    <img src="{% static 'Icons/avoid touching face.svg' %}" alt="Kiwi standing on oval" class="dot">
+    <p style="padding:0px;">Avoid touching your face </p>
+    </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+      <div class="column" style="text-align:center;">
+    <img src="{% static 'Icons/protection.svg' %}" alt="Kiwi standing on oval" class="dot">
+    <p style="padding:0px;">Avoid contact with sick people </p>
+    </div>
+    </div>
+    </div>
+
+  </div>
+</section><!-- End Contact Us Section -->
+
+{% endblock %}
